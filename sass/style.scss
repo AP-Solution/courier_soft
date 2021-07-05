@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	//background-color: blue;
+	header {
+		width: 100%;
+		height: 50px;
+		background: rgb(50,0,50);
+		background: linear-gradient(90deg, rgba(50,0,50,1) 0%, rgba(100,0,128,1) 55%, rgba(185,0,185,1) 100%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		h2.text_logo {
+			transition: 2.5s ease-in-out;
+			color: white;
+			text-shadow: 1px 1px 3px black;
+			margin: 0;
+			//text-align: center;
+			font-size: 35px;
+			font-family: 'Ubuntu', sans-serif;
+		}
+	}
+	section.calculate_wrapper {
+		color: white;
+		font-weight: bold;
+		text-shadow: 1px 1px 3px black;
+		width: 100%;
+		height: calc(100vh - 50px);
+		box-shadow: 1px 1px 13px 1px rgba(0,0,0,0.5) inset;
+		padding-top: 20px;
+		margin: auto;
+		input[disabled] {
+			background-color: rgba(169, 169, 169, 0.8);
+		}
+		div.payment_info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 300px;
+			margin: auto;
+			border-radius: 10px;
+			background: linear-gradient(45deg, rgba(50,0,50,1) 0%, rgba(100,0,128,1) 55%, rgba(185,0,185,1) 100%);
+			h4 {
+				text-shadow: 1px 1px 3px black;
+				display: flex;
+				margin: 0;
+				padding: 10px 0 10px;
+				text-align: center;
+				font-size: 30px;
+				input {
+					border-radius: 10px;
+					border: none;
+					outline: none;
+					margin-left: 5px;
+					padding: 0 15px;
+					width: 50px;
+					max-height: 50px;
+				}
+			}
+			div.payment_wrapper {
+				width: 100%;
+				//border: 2px solid red;
+				display: flex;
+				justify-content: space-between;
+				padding: 0 10px;
+				flex-wrap: wrap;
+				align-items: center;
+				div.payment_group {
+					margin: 10px 0;
+					padding: 5px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					width: 30%;
+					height: 50px;
+					border: 1px solid rgba(255,255,255,0.5);
+					box-shadow: 0 0 5px 0 white;
+					border-radius: 10px;
+
+					input, select {
+						background-color: rgba(255,255,255,0.7);
+						outline: none;
+						max-width: 95%;
+						text-align: center;
+						border-radius: 5px;
+					}
+				}	
+			}
+			button.clear_btn {
+				background-color: black;
+				font-weight: bold;
+				border: 2px solid black;
+				color: white;
+				border-radius: 5px;
+				margin: 10px 0;
+				padding: 5px 10px;
+			}
+			button.submit_btn {
+				background-color: white;
+				font-weight: bold;
+				border: 2px solid black;
+				color: black;
+				border-radius: 5px;
+				margin: 10px 0;
+				padding: 5px 10px;
+			}
+			button.cancel_btn {
+				background-color: white;
+				font-weight: bold;
+				border: 2px solid black;
+				color: black;
+				border-radius: 5px;
+				margin: 10px 0;
+				padding: 5px 10px;
+			}
+			div.output_info {
+				h4 {
+					font-size: 24px;
+					color: white;
+				}
+				width: 100%;
+				//height: 200px;
+				//border: 1px solid green;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-items: center;
+				div.output_group {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					width: 30%;
+					height: 50px;
+					//border: 1px solid gold;
+					input.output_input {
+						max-width: 100%;
+						text-align: center;
+						color: purple;
+					}
+				}
+			}
+		}
+	}
+}

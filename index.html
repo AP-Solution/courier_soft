@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<header>
+		<h2 class="text_logo">AP_SOLUTION</h2>
+	</header>
+	<section class="calculate_wrapper">
+		<div class="payment_info">
+			<h4>Новый заказ<input type="number" class="order_numb"></h4>
+			<div class="payment_wrapper">
+				<div class="payment_group">
+					<span>Способ</span>
+					<select class="payment_method">
+						<option>Наличными</option>
+						<option>Картой</option>
+						<option>Оплачено</option>
+					</select>
+				</div>
+
+				<div class="payment_group">
+					<span>Сумма</span>
+					<input type="number" class="money_to_pay">
+				</div>
+
+				<div class="payment_group">
+					<span>Получено</span>
+					<input type="number" class="money_inner">
+				</div>
+				
+				<div class="payment_group">
+					<span>Разменка</span>
+					<input type="number" class="change">
+				</div>
+
+				<div class="payment_group">
+					<span>Чаевые</span>
+					<input type="number" class="tip">
+				</div>
+
+				<div class="payment_group">
+					<span>#</span>
+					<input type="number" disabled class="total_orders">
+				</div>
+			</div>
+			<div class="btn-section">
+				<button class="submit_btn">Добавить</button>
+				<button class="clear_btn">Очистить</button>
+				<button class="cancel_btn">Последний</button>
+			</div>
+			<h4>Промежуточный подсчёт</h4>
+			<div class="output_info">
+				
+				<div class="output_group">
+					<span>Наличка</span>
+					<input type="number" class="output_input" disabled>
+				</div>
+				<div class="output_group">
+					<span>Картой</span>
+					<input type="number" class="output_input" disabled>
+				</div>
+				<div class="output_group">
+					<span>Оплачено</span>
+					<input type="number" class="output_input" disabled>
+				</div>
+				<div class="output_group">
+					<span>Чаевые</span>
+					<input type="number" class="output_input" disabled>
+				</div>
+				<div class="output_group">
+					<span>Разменка</span>
+					<input type="number" class="output_input" disabled>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/script.js"></script>
+</body>
+</html>
